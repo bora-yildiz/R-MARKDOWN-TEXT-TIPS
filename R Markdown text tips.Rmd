@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-##BULLETS (- DEN SONRA İKİ BOŞLUK BIRAKILACAK)
+##BULLETS (AFTER TWO SPACE THAN "-")
 
 -  **bold**  
 -  *itaic*
@@ -21,28 +21,30 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 
-## **YAZI FONTLARI (BOLD-ITALIC)
+## ** TEXT FONTS (BOLD-ITALIC)
+
 **bold**
 
 *italic*
 
-## BAŞLIK DÜZEYLERİ 
+## Heading Levels
 
-# BİRİNCİ DÜZEY BAŞLIK
+# Header level 1
 
-## İKİNCİ DÜZEY BAŞLIK
+## Header level 2
 
-### ÜÇÜNCÜ DÜZEY BAŞLIK
+### Header level 3
 
-# 1. Birinci Düzey başlık
+# Header level 1
 
 This is an R Markdown document. **Markdown** is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-## 1.1. R Markdown
+## 1.1. Header level 2
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
-### 1.1.1. üçüncü Düzey başlık
+### 1.1.1. Header level 3
+
 efınveoıbnofınbowbfonbogfbn
 
 ```{r cars}
