@@ -6,28 +6,91 @@ output:
   html_document:
     df_print: paged
   word_document: default
+  output: html_document
+runtime: shiny
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r}
+library(shiny)
 ```
 
+```{r, echo = FALSE}
+numericInput("n",
+ "How many cars?", 5)
+renderTable({
+ head(cars, input$n)
+}) 
 
-##BULLETS (AFTER TWO SPACE THAN "-")
+head(cars)
+View(cars)
+```
 
--  **bold**  
--  *itaic*
--  [links](https://avesis.istanbul.edu.tr/borayildiz)
+```{r echo=TRUE}
+getRversion ()
+```
 
+Plain text 
 
+End a line with two spaces to start a new paragraph. 
 
-## ** TEXT FONTS (BOLD-ITALIC)
+*italics* and **bold**
+
+`verbatim code`
+
+sub/superscript^2^~2~ 
+
+~~strikethrough~~
+
+escaped: \* \_ \\ 
+
+endash: --, 
+
+emdash: --- 
+
+equation: $A = \pi*r^{2}$ 
+
+equation block: $$E = mc^{2}$$ \> 
+
+>block quote \
+
+# Header1 {\#anchor} \#\# 
+
+Header 2 {\#css_id} \#\#\# 
+
+Header 3 {.css_class} \#\#\#\# 
+
+Header 4 \#\#\#\#\# 
+
+Header 5 \#\#\#\#\#\# 
+
+Header 6 
+<!--Text comment--> 
+\textbf{Tex ignored in HTML} 
+<em>HTML ignored in pdfs</em> 
+<http://www.rstudio.com> [link](www.rstudio.com) 
+Jump to [Header 1](#anchor) image: ![Caption](smallorb.png) \
+
+* unordered list 
+    + sub-item 1
+    + sub-item 2 
+       - sub-sub-item 1
+       
+
+> block quote $$E = mc^{2}$$
+
+\#\#BULLETS (- DEN SONRA İKİ BOŞLUK BIRAKILACAK)
+
+-   **bold**\
+-   *itaic*
+-   [links](https://avesis.istanbul.edu.tr/borayildiz)
+
+## \*\*YAZI FONTLARI (BOLD-ITALIC)
 
 **bold**
 
 *italic*
 
-## Heading Levels
+## BAŞLIK DÜZEYLERİ
 
 # Header level 1
 
@@ -60,4 +123,3 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
-
